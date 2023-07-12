@@ -18,12 +18,6 @@ fastify.get("/api/healthchecker", (request, reply) => {
     message: "Build CRUD API with Node.js and Sequelize",
   });
 });
-fastify.get("/api/healthchecker", (request, reply) => {
-  reply.status(200).send({
-    status: "success",
-    message: "Build CRUD API with Node.js and Sequelize",
-  });
-});
 
 fastify.all("*", (request, reply) => {
   reply.status(404).send({
