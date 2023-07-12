@@ -24,7 +24,7 @@ fastify.all("*", (request, reply) => {
     status: "fail",
    // message: "Route does not exist on this server",
   // message: `Route: ${request.raw.url} does not exist on this server`,
-    message: `Route: ${request.raw.url} does not exist on this server`,
+    message: `Route: ${request.raw.url} does   not exist on this server`,
   });
 });
 // Run the server!
